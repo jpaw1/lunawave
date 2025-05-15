@@ -65,6 +65,19 @@ ul li {
     line-height: 1.5;
 }
 
+/* App Screenshot Section */
+.app-screenshot {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.app-screenshot img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
 /* App Store Button */
 .get-app {
     margin: 30px 0;
