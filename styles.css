@@ -1,101 +1,146 @@
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    padding: 20px;
     background: linear-gradient(135deg, #000000, #4a4a4a);
     color: white;
     text-align: center;
-    position: relative;
 }
 
-/* Main container */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Container */
 .container {
     background: rgba(255, 255, 255, 0.1);
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    position: relative;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 /* App Title */
 .app-title {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: bold;
     margin-bottom: 10px;
-    text-transform: none;
     letter-spacing: 1px;
+    color: #00c2a8; 
 }
-
 /* Logo */
 .logo {
     width: 100px;
-    height: auto;
     margin-bottom: 20px;
+}
+
+/* Tagline */
+.tagline {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 25px;
+    color: #ddd;
 }
 
 /* Section Headings */
 .section-heading {
-    font-size: 22px;
-    margin-bottom: 15px;
-    margin-top: 30px;
+    font-size: 20px;
+    margin: 25px 0 10px;
+    color: #00c2a8; 
 }
 
-/* Description Section */
-.description {
-    margin: 20px 0;
+/* Lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
 }
 
-.description p {
-    font-size: 16px;
-    margin-bottom: 15px;
+ul li {
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 1.5;
 }
 
-/* Get the App Section */
+/* App Store Button */
 .get-app {
     margin: 30px 0;
 }
 
 .appstore-button {
-    width: 150px;
+    width: 160px;
     transition: transform 0.2s ease;
 }
 
 .appstore-button:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
-/* Privacy Policy Section */
+/* Privacy Policy */
 .privacy-policy {
     margin: 30px 0;
+    font-size: 14px;
+    color: #ccc;
 }
 
-/* Flexbox Buttons Section */
+/* Buttons */
 .button-group {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-top: 30px;
-    flex-wrap: wrap; /* Wrap nicely on smaller screens */
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
 }
 
-/* Button Style (shared) */
 .button {
     background: #ffcc00;
-    color: #333;
+    color: #000;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
     transition: background 0.3s ease;
-    flex: 1 1 auto;
-    max-width: 150px;
+    display: inline-block;
 }
 
 .button:hover {
-    background: #ffdb4d;
+    background: #ffe066;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    font-size: 12px;
+    color: #aaa;
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    .app-title {
+        font-size: 26px;
+    }
+
+    .section-heading {
+        font-size: 18px;
+    }
+
+    ul li {
+        font-size: 14px;
+    }
+
+    .appstore-button {
+        width: 140px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
 }
